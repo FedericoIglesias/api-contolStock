@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "b53ac4a6-e1d0-4cff-b707-643e7299f25f",
+		"name": "Test-Stock-Control",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24708081",
+		"_collection_link": "https://blue-zodiac-581873.postman.co/workspace/fede~d54bdc3e-fbf1-45b7-8a2f-57da68954921/collection/24708081-b53ac4a6-e1d0-4cff-b707-643e7299f25f?action=share&source=collection_link&creator=24708081"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/stock_outed",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products/stock_outed",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"stock_outed"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// {\r\n//     \"name\":\"q\",\r\n//     \"brand\":\"q\",\r\n//     \"cost\":0,\r\n//     \"stock\":0\r\n// }\r\n// {\r\n//     \"name\":\"Auriculares\",\r\n//     \"brand\":\"Noblex\",\r\n//     \"cost\":65.043,\r\n//     \"stock\":54\r\n// }\r\n// {\r\n//     \"name\":\"Parlante\",\r\n//     \"brand\":\"Sony\",\r\n//     \"cost\":25,\r\n//     \"stock\":6\r\n// }\r\n// {\r\n//     \"name\":\"PlayStation5\",\r\n//     \"brand\":\"Sony\",\r\n//     \"cost\":89.90,\r\n//     \"stock\":0\r\n// }\r\n// {\r\n//     \"name\":\"Laptop\",\r\n//     \"brand\":\"MSI\",\r\n//     \"cost\":32.01,\r\n//     \"stock\":8\r\n// }\r\n// {\r\n//     \"name\":\"IPhone\",\r\n//     \"brand\":\"Apple\",\r\n//     \"cost\":1300,\r\n//     \"stock\":23\r\n// }\r\n// {\r\n//     \"name\":\"Auriculares\",\r\n//     \"brand\":\"Apple\",\r\n//     \"cost\":2.1,\r\n//     \"stock\":5\r\n// }\r\n// {\r\n//     \"name\":\"TV\",\r\n//     \"brand\":\"Philips\",\r\n//     \"cost\":45,\r\n//     \"stock\":2\r\n// }\r\n// {\r\n//     \"name\":\"Parlante\",\r\n//     \"brand\":\"Hitachi\",\r\n//     \"cost\":20.39,\r\n//     \"stock\":4\r\n// }\r\n// {\r\n//     \"name\":\"Laptop\",\r\n//     \"brand\":\"Noblex\",\r\n//     \"cost\":99.10,\r\n//     \"stock\":9\r\n// }\r\n// {\r\n//     \"name\":\"TV\",\r\n//     \"brand\":\"Noblex\",\r\n//     \"cost\":10.89,\r\n//     \"stock\":3\r\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/products/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/products/delete/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"delete",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "products/edit/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// {\r\n//     \"idProduct\":,\r\n//     \"name\":\"Celulares\",\r\n//     \"brand\":\"ZTE\",\r\n//     \"cost\":29,\r\n//     \"stock\":2\r\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/products/edit/13",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"edit",
+								"13"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "clients/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clients/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clients",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clients/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\":\"Jimena\",\r\n  \"lastName\":\"Cabreja\",\r\n  \"dni\":\"20.393.523P\"\r\n}\r\n// {\r\n//   \"name\":\"Jesus\",\r\n//   \"lastName\":\"Laferrere\",\r\n//   \"dni\":\"10.666.777\"\r\n// }\r\n// {\r\n//   \"name\":\"Manuel\",\r\n//   \"lastName\":\"Cristiano\",\r\n//   \"dni\":\"89.280.930T\"\r\n// }\r\n// {\r\n//   \"name\":\"Pedro\",\r\n//   \"lastName\":\"Leon\",\r\n//   \"dni\":\"8.093.289\"\r\n// }\r\n// {\r\n//   \"name\":\"Andrea\",\r\n//   \"lastName\":\"Polilla\",\r\n//   \"dni\":\"23.082.930\"\r\n// }\r\n// {\r\n//   \"name\":\"Marcelo\",\r\n//   \"lastName\":\"Pereira\",\r\n//   \"dni\":\"1.234.123\"\r\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clients/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clients/delete/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"delete",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clients/edit/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clients/edit/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								"edit",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sales",
+			"item": [
+				{
+					"name": "sales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "// {\r\n//     \"dateSale\": \"2024-05-27\",\r\n//     \"price\": 7820.60 ,\r\n//     \"listProduct\":[{\r\n//         \"idProduct\":6,\r\n//         \"idProduct\":2,\r\n//         \"idProduct\":10,\r\n//         \"idProduct\":10\r\n//     } ],\r\n//     \"client;\": {\"idClient\":5}\r\n// }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/sales/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales/delete/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"delete",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales/edit/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales/edit/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"edit",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales/products/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales/products/{id}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"products",
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales/{date}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales/{date}",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"{date}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sales/elderly_sale",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/sales/elderly_sale",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"sales",
+								"elderly_sale"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

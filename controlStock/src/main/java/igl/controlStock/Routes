@@ -1,0 +1,25 @@
+# Endpoints
+##Products
+POST  "/products/create"
+GET "/products"
+GET "/products/{id}
+DELETE "/products/delete/{id}"
+PUT "/products/edit/{id}"
+GET "/products/stock_outed" -->  return(if sotck <= 5)
+
+##Clients
+POST "/clients/create"
+GET "/clients"
+GET "/clients/{id}"
+DELETE "/clients/delete/{id}
+PUT "/clients/edit/{id}
+
+##Sales
+POST "/sales/create"
+GET "/sales"
+GET "/sales/{id}"
+DELETE "/sales/delete/{id}"
+PUT "/sales/edit/{id}"
+GET "/sales/products/{id}" --> return products from sale
+GET "/sales/{date}" --> value & amount of sale of date
+GET "/sales/elderly_sale" --> return DTO
